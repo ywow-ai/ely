@@ -12,8 +12,11 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
+    "@elysiajs/jwt": "^1.2.0",
     "@elysiajs/node": "^1.2.3",
-    "elysia": "^1.2.10"
+    "@elysiajs/swagger": "^1.2.0",
+    "elysia": "^1.2.10",
+    "logixlysia": "^4.0.0"
   },
   "devDependencies": {
     "ts-node": "^10.9.2"
