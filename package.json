@@ -1,0 +1,21 @@
+{
+  "name": "ely",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node app/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@elysiajs/node": "^1.2.3",
+    "elysia": "^1.2.10"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
