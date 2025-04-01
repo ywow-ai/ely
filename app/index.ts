@@ -4,11 +4,6 @@ import { swagger } from "@elysiajs/swagger";
 import { jwt } from "@elysiajs/jwt";
 
 const port: number = 3000;
-const data = [
-  { id: 1, name: "Alice", age: 25 },
-  { id: 2, name: "Bob", age: 30 },
-  { id: 3, name: "Charlie", age: 22 }
-];
 
 new Elysia({ adapter: node() })
   .use(
@@ -16,5 +11,9 @@ new Elysia({ adapter: node() })
   )
   .use(swagger())
   .get("/", () => "Hello Node!")
-  .get("/data", () => data)
+  .get("/data", () => [
+    { id: 1, name: "Alice", age: 25 },
+    { id: 2, name: "Bob", age: 30 },
+    { id: 3, name: "Charlie", age: 22 },
+  ])
   .listen(port);
