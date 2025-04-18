@@ -20,4 +20,5 @@ new Elysia({ adapter: node() })
     { id: 3, name: "Charlie", age: 22 },
   ])
   .get("/data/:id", () => ({ id: 1, name: "Alice", age: 25 }))
+  .post("/data/:id/save", () => ({ id: 1, name: "Alice", age: 25 }))
   .listen(port);
